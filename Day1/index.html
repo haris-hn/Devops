@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My HTML Assignment</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <nav>
+        <h1>My Learning Journey</h1>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr />
+
+    <main>
+      <!-- About Section -->
+      <section id="about">
+        <h2>Introduction</h2>
+        <p>
+          I am practicing <strong>HTML semantics</strong> to build better web
+          structures. This page uses <em>various tags</em> to demonstrate my
+          progress.
+        </p>
+
+        <blockquote>
+          "Consistency is the key to becoming a great developer."
+        </blockquote>
+
+        <h3>My Goals for this Week:</h3>
+        <ul>
+          <li>Master VS Code Emmet</li>
+          <li>Understand HTML5 Semantics</li>
+          <li>Learn CSS Layouts</li>
+        </ul>
+
+        <progress value="60" max="100"></progress>
+        <p>Learning Progress: 60%</p>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="gallery">
+        <h2>Media Showcase</h2>
+
+        <figure>
+          <img src="download.jfif" alt="Sample Project Image" width="200" />
+          <figcaption>My Practice Project</figcaption>
+        </figure>
+
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/t2_Q2BRzeEE?si=CEU-yCmEUpoC5HbG"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <p>
+          Check out my code on
+          <a href="https://github.com" target="_blank">GitHub</a>.
+        </p>
+      </section>
+
+      <!-- Schedule Section -->
+      <section id="schedule">
+        <h2>Weekly Schedule</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Topic</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>HTML Basics</td>
+              <td>Completed</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>Forms & Tables</td>
+              <td>In Progress</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>CSS Flexbox</td>
+              <td>Pending</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>Contact the Developer</h2>
+        <form action="submit">
+          <fieldset>
+            <legend>Personal Info</legend>
+
+            <label for="username">Name:</label><br />
+            <input type="text" id="username" placeholder="Your Name" /><br />
+
+            <label for="useremail">Email:</label><br />
+            <input type="email" id="useremail" required /><br />
+          </fieldset>
+
+          <br />
+
+          <label for="message">Message:</label><br />
+          <textarea id="message" rows="4" cols="30"></textarea><br />
+
+          <label for="role">Select Role:</label><br />
+          <select id="role">
+            <option>Student</option>
+            <option>Developer</option>
+            <option>Other</option></select
+          ><br /><br />
+
+          <input type="checkbox" id="subscribe" />
+          <label for="subscribe">Subscribe to newsletter</label><br /><br />
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <hr />
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Developed by Haris | Faisalabad, PK</p>
+      <p>
+        Follow me:
+        <a href="#">LinkedIn</a> |
+        <a href="#">Twitter</a>
+      </p>
+    </footer>
+  </body>
+</html>
