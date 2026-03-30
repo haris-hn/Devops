@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Age Calculator - Date Input</title>
+    <!--  -->
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+    <div class=" shadow-md bg-gray-700">
+      <div
+        class="bg-white p-8 md:p-12 rounded-2xl rounded-br-[100px] shadow-xl w-full max-w-[500px]"
+      >
+        <div class="flex flex-col mb-8 border-b border-gray-100 pb-12 relative">
+          <label
+            class="text-gray-500 font-bold text-xs tracking-widest uppercase mb-3"
+            >Select Birth Date</label
+          >
+          <input
+            type="date"
+            id="birthdate"
+            class="border border-gray-300 rounded-lg p-3 text-xl font-bold text-gray-700 focus:border-purple-500 outline-none cursor-pointer"
+          />
+
+          <button
+            onclick="calculateAge()"
+            class="absolute -bottom-8 left-1/2 -translate-x-1/2 md:left-full md:-translate-x-full bg-[#854dff] hover:bg-black p-4 rounded-full transition-all shadow-lg"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 46 44"
+              fill="none"
+              stroke="white"
+              stroke-width="3"
+            >
+              <path
+                d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="space-y-1">
+          <h1 class="text-6xl font-extrabold italic">
+            <span id="out-year" class="text-[#854dff]">--</span> years
+          </h1>
+          <h1 class="text-6xl font-extrabold italic">
+            <span id="out-month" class="text-[#854dff]">--</span> months
+          </h1>
+          <h1 class="text-6xl font-extrabold italic">
+            <span id="out-day" class="text-[#854dff]">--</span> days
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
