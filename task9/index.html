@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuizMaster - Landing Page</title>
+    <link rel="stylesheet" href="./dist/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+      .animate-fade-in {
+        animation: fadeIn 0.5s ease-out forwards;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+  </head>
+  <body class="bg-[#F8FAFC] text-gray-900 selection:bg-blue-100 selection:text-blue-700">
+    <!-- Navbar -->
+    <header class="bg-white/80 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50">
+      <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="#" id="logo-btn" class="transition hover:opacity-80">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/20">
+              <span class="text-white text-xl font-black italic">Q</span>
+            </div>
+            <span class="font-black text-xl tracking-tight text-gray-900">QuizMaster</span>
+          </div>
+        </a>
+
+        <!-- Center Menu -->
+        <div class="hidden md:flex items-center gap-10 text-sm font-bold">
+          <a href="#" id="home-btn" class="text-black transition hover:text-blue-600">Home</a>
+          <a href="#" id="quizzes-btn" class="text-gray-500 transition hover:text-blue-600">Quizzes</a>
+          <a href="#" id="leaderboard-btn" class="text-gray-500 transition hover:text-blue-600">Leaderboard</a>
+          <a href="#" id="profile-btn" class="text-gray-500 transition hover:text-blue-600 hidden">Profile</a>
+        </div>
+
+        <!-- Right Section -->
+        <div class="flex items-center gap-4">
+          <button id="login-btn" class="px-6 py-2.5 text-sm font-bold text-gray-700 hover:text-blue-600 transition">
+            Log In
+          </button>
+          <button id="register-btn" class="px-6 py-2.5 text-sm font-bold bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition shadow-lg shadow-blue-500/20 active:scale-95">
+            Get Started
+          </button>
+          <button id="logout-btn" class="hidden px-6 py-2.5 text-sm font-bold text-red-500 hover:bg-red-50 rounded-xl transition">
+            Log Out
+          </button>
+          <!-- Mobile Menu Toggle -->
+          <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700 hover:text-blue-600 transition focus:outline-none ml-2">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-xl border-t border-gray-100 absolute w-full left-0 top-full shadow-2xl py-2 transition-all">
+        <ul class="flex flex-col text-center font-bold text-lg">
+          <li><a href="#" class="mobile-nav-link text-black hover:text-blue-600 block py-4 transition" data-target="home">Home</a></li>
+          <li><a href="#" class="mobile-nav-link text-gray-500 hover:text-blue-600 block py-4 transition" data-target="quizzes">Quizzes</a></li>
+          <li><a href="#" class="mobile-nav-link text-gray-500 hover:text-blue-600 block py-4 transition" data-target="leaderboard">Leaderboard</a></li>
+          <li><a href="#" class="mobile-nav-link mobile-profile hidden text-gray-500 hover:text-blue-600 py-4 transition" data-target="profile">Profile</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-10 min-h-[calc(100vh-80px)]">
+      <!-- Landing Page Content -->
+      <div class="relative w-full min-h-[640px] rounded-[40px] overflow-hidden mb-24 flex flex-col items-center justify-center text-center px-6 shadow-2xl shadow-blue-100">
+        <img
+          src="./assets/images/d38989f4970885122b241362efabff60c8d3f553.png"
+          class="absolute inset-0 w-full h-full object-cover scale-105"
+          alt="Hero Background"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+
+        <div class="relative z-10 max-w-3xl animate-fade-in">
+         
+          <h1 class="text-6xl md:text-7xl font-black text-white mt-8 tracking-tight">
+            Welcome to <span class=>QuizMaster.</span>
+          </h1>
+          <p class="text-gray-200 text-xl mb-12 leading-relaxed max-w-2xl mx-auto">
+            Experience the future of interactive learning. Challenge yourself, compete with friends, and master any subject through our premium quiz engine.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <button id="get-started-btn" class="w-full sm:w-auto bg-blue-600 text-white px-12 py-5 rounded-2xl font-black text-lg hover:bg-blue-700 transition shadow-2xl shadow-blue-500/40 active:scale-95 group">
+              Start Free Quiz
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <section class="mb-24 px-4">
+        <div class="max-w-xl mb-16">
+          <h2 class="text-4xl font-black text-gray-900 mb-4 tracking-tight">Why Choose QuizMaster?</h2>
+          <p class="text-gray-500 text-lg">
+            We've built a platform that's not just about questions, but about growth and competition.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-10 rounded-[32px] border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all group">
+            <div class="w-16 h-16 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600 mb-8 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="font-black text-2xl text-gray-900 mb-4">Real-time Racing</h3>
+            <p class="text-gray-500 leading-relaxed">
+              Every second counts. Our precision timer keeps the pressure on while you climb the ranks.
+            </p>
+          </div>
+
+          <div class="bg-white p-10 rounded-[32px] border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all group">
+            <div class="w-16 h-16 rounded-2xl bg-emerald-50 flex items-center justify-center text-emerald-600 mb-8 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-2.066 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946 2.066 3.42 3.42 0 013.136 3.136 3.42 3.42 0 002.066 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-2.066 1.946 3.42 3.42 0 01-3.136 3.136 3.42 3.42 0 00-1.946 2.066 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-2.066 3.42 3.42 0 01-3.136-3.136 3.42 3.42 0 00-2.066-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 002.066-1.946 3.42 3.42 0 013.136-3.136z" />
+              </svg>
+            </div>
+            <h3 class="font-black text-2xl text-gray-900 mb-4">Skill Badge System</h3>
+            <p class="text-gray-500 leading-relaxed">
+              Earn distinct badges as you master different categories and maintain high accuracy streaks.
+            </p>
+          </div>
+
+          <div class="bg-white p-10 rounded-[32px] border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all group">
+            <div class="w-16 h-16 rounded-2xl bg-orange-50 flex items-center justify-center text-orange-600 mb-8 group-hover:bg-orange-600 group-hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+              </svg>
+            </div>
+            <h3 class="font-black text-2xl text-gray-900 mb-4">Deep Analytics</h3>
+            <p class="text-gray-500 leading-relaxed">
+              Track your performance across all attempts with detailed history and visual progress bars.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-100 py-12">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="flex items-center gap-3 grayscale opacity-60">
+          <div class="w-8 h-8 bg-gray-400 rounded-lg flex items-center justify-center">
+            <span class="text-white text-sm font-bold italic">Q</span>
+          </div>
+          <span class="font-bold text-lg text-gray-900">QuizMaster</span>
+        </div>
+        <p class="text-gray-400 text-sm font-medium">© 2026 QuizMaster. Built for the future of learning.</p>
+        <div class="flex gap-6 text-sm font-bold text-gray-400">
+          <a href="#" class="hover:text-gray-900 transition">Terms</a>
+          <a href="#" class="hover:text-gray-900 transition">Privacy</a>
+          <a href="#" class="hover:text-gray-900 transition">Twitter</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Templates -->
+    
+    <!-- Register -->
+    <template id="template-register">
+      <section class="min-h-[80vh] flex flex-col items-center justify-center px-6 py-12 animate-fade-in">
+        <div class="w-full max-w-md bg-white p-12 rounded-[40px] shadow-2xl shadow-blue-100">
+          <div class="text-center mb-10">
+            <h2 class="text-4xl font-black text-gray-900 mb-3">Join QuizMaster</h2>
+            <p class="text-gray-400 font-medium">Create your credentials to start racing.</p>
+          </div>
+
+          <form id="signup-form" class="flex flex-col gap-5">
+            <div class="space-y-2">
+              <label class="text-sm font-bold text-gray-700 ml-1">Full Name</label>
+              <input type="text" id="full-name" placeholder="John Doe" required class="w-full px-6 py-4 rounded-2xl border-2 border-gray-100 focus:border-blue-500 outline-none transition font-medium bg-gray-50/50 text-gray-800" />
+            </div>
+
+            <div class="space-y-2">
+              <label class="text-sm font-bold text-gray-700 ml-1">Email Address</label>
+              <input type="email" id="email" placeholder="john@example.com" required class="w-full px-6 py-4 rounded-2xl border-2 border-gray-100 focus:border-blue-500 outline-none transition font-medium bg-gray-50/50 text-gray-800" />
+            </div>
+
+            <div class="space-y-2">
+              <label class="text-sm font-bold text-gray-700 ml-1">Password</label>
+              <input type="password" id="password" placeholder="••••••••" required class="w-full px-6 py-4 rounded-2xl border-2 border-gray-100 focus:border-blue-500 outline-none transition font-medium bg-gray-50/50 text-gray-800" />
+            </div>
+
+            <div class="space-y-2">
+              <label class="text-sm font-bold text-gray-700 ml-1">Confirm Password</label>
+              <input type="password" id="confirm-password" placeholder="••••••••" required class="w-full px-6 py-4 rounded-2xl border-2 border-gray-100 focus:border-blue-500 outline-none transition font-medium bg-gray-50/50 text-gray-800" />
+            </div>
+
+            <button type="submit" class="w-full bg-blue-600 text-white py-5 rounded-2xl font-black text-lg hover:bg-blue-700 transition shadow-xl shadow-blue-500/20 active:scale-[0.98] mt-4">
+              Create Account
+            </button>
+          </form>
+
+          <p class="text-center text-gray-400 font-medium text-sm mt-8">
+            Already a member?
+            <a href="#" id="login-link" class="text-blue-600 font-bold hover:underline">Sign In</a>
+          </p>
+        </div>
+      </section>
+    </template>
+
+    <!-- Login -->
+    <template id="template-login">
+      <section class="min-h-[80vh] flex items-center justify-center px-6 animate-fade-in">
+        <div class="w-full max-w-md bg-white p-12 rounded-[40px] shadow-2xl shadow-blue-100">
+          <div class="text-center mb-10">
+            <h2 class="text-4xl font-black text-gray-900 mb-3">Welcome Back</h2>
+            <p class="text-gray-400 font-medium">Log in to sync your progress.</p>
+          </div>
+
+          <form id="login-form" class="flex flex-col gap-6">
+            <div class="space-y-2">
+              <label class="text-sm font-bold text-gray-700 ml-1">Email</label>
+              <input type="email" id="login-email" placeholder="john@example.com" required class="w-full px-6 py-4 rounded-2xl border-2 border-gray-100 focus:border-blue-500 outline-none transition font-medium bg-gray-50/50 text-gray-800" />
+            </div>
+
+            <div class="space-y-2">
+              <div class="flex justify-between items-center px-1">
+                <label class="text-sm font-bold text-gray-700">Password</label>
+                <a href="#" class="text-xs text-blue-600 font-bold hover:underline">Forgot?</a>
+              </div>
+              <input type="password" id="login-password" placeholder="••••••••" required class="w-full px-6 py-4 rounded-2xl border-2 border-gray-100 focus:border-blue-500 outline-none transition font-medium bg-gray-50/50 text-gray-800" />
+            </div>
+
+            <button type="submit" class="w-full bg-blue-600 text-white py-5 rounded-2xl font-black text-lg hover:bg-blue-700 transition shadow-xl shadow-blue-500/20 active:scale-[0.98] mt-2">
+              Log In Now
+            </button>
+
+            <p class="text-sm text-gray-400 text-center font-medium mt-4">
+              New here?
+              <a href="#" id="goto-register" class="text-blue-600 font-bold hover:underline">Create an account</a>
+            </p>
+          </form>
+        </div>
+      </section>
+    </template>
+
+    <!-- Profile -->
+    <template id="template-profile">
+      <section class="max-w-5xl mx-auto py-16 animate-fade-in">
+        <div class="bg-white rounded-[40px] p-12 shadow-2xl shadow-blue-100 mb-10">
+          <div class="flex flex-col md:flex-row items-center md:items-start gap-12">
+            <div class="relative group">
+              <img src="https://i.pravatar.cc/160" class="w-40 h-40 rounded-[40px] shadow-xl border-4 border-white mb-4 group-hover:scale-105 transition-transform" />
+              <div class="absolute bottom-6 right-2 w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white border-4 border-white cursor-pointer hover:bg-blue-700 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25z"/></svg>
+              </div>
+            </div>
+
+            <div class="flex-1 text-center md:text-left">
+              <h2 id="profile-name" class="text-4xl font-black text-gray-900 mb-2">Member Name</h2>
+              <div class="flex flex-wrap justify-center md:justify-start gap-3 mb-6">
+                <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-lg text-xs font-bold uppercase tracking-widest">Quiz Master</span>
+                <span class="px-3 py-1 bg-emerald-100 text-emerald-700 rounded-lg text-xs font-bold uppercase tracking-widest">Global Rank: #42</span>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-8">
+                <div class="space-y-1">
+                  <p class="text-xs text-gray-400 font-bold uppercase tracking-widest">Full Name</p>
+                  <p id="info-name" class="text-lg font-bold text-gray-800">-</p>
+                </div>
+                <div class="space-y-1">
+                  <p class="text-xs text-gray-400 font-bold uppercase tracking-widest">Account Email</p>
+                  <p id="info-email" class="text-lg font-bold text-gray-800">-</p>
+                </div>
+              </div>
+
+              <div class="space-y-4">
+                <p class="text-xs text-gray-400 font-bold uppercase tracking-widest">Professional Bio</p>
+                <textarea id="bio-input" class="w-full border-2 border-gray-100 rounded-2xl p-4 text-sm font-medium bg-gray-50 focus:border-blue-500 outline-none transition text-gray-800" rows="3" placeholder="Tell the world about your expertise..."></textarea>
+                <button id="save-bio" class="px-10 py-3 bg-gray-900 text-white rounded-xl font-bold text-sm hover:bg-black transition shadow-lg active:scale-95">Save Changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-[40px] p-12 shadow-2xl shadow-blue-100">
+           <h3 class="text-2xl font-black text-gray-900 mb-8">Recent Performance History</h3>
+           <div class="overflow-hidden rounded-3xl border border-gray-50">
+             <table class="w-full text-left">
+               <thead class="bg-gray-50 text-gray-400 uppercase text-xs font-black tracking-widest">
+                 <tr>
+                   <th class="p-6">Quiz Concept</th>
+                   <th class="p-6">Performance</th>
+                   <th class="p-6">Completion Date</th>
+                 </tr>
+               </thead>
+               <tbody id="quiz-history" class="text-sm font-bold text-gray-700">
+                 <!-- Populated via JS -->
+               </tbody>
+             </table>
+           </div>
+        </div>
+      </section>
+    </template>
+
+    <!-- Quizzes Main Page -->
+    <template id="page-quizzes">
+      <main class="max-w-7xl mx-auto px-6 py-12 animate-fade-in">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+          <div>
+            <span class="text-blue-600 font-black uppercase text-xs tracking-widest mb-2 block">Learning Hub</span>
+            <h1 class="text-5xl font-black text-gray-900 tracking-tight">Active Challenges</h1>
+          </div>
+          
+          <div class="flex gap-2 bg-white p-2 rounded-2xl shadow-sm border border-gray-100 overflow-x-auto">
+            <button id="filter-all" class="bg-blue-600 text-white px-6 py-3 rounded-xl text-sm font-black transition hover:bg-blue-700">All Topics</button>
+            <button id="filter-science" class="bg-gray-100 px-6 py-3 rounded-xl text-sm font-black transition hover:bg-gray-200">Science</button>
+            <button id="filter-history" class="bg-gray-100 px-6 py-3 rounded-xl text-sm font-black transition hover:bg-gray-200">History</button>
+            <button id="filter-literature" class="bg-gray-100 px-6 py-3 rounded-xl text-sm font-black transition hover:bg-gray-200">Literature</button>
+            <button id="filter-math" class="bg-gray-100 px-6 py-3 rounded-xl text-sm font-black transition hover:bg-gray-200">Math</button>
+          </div>
+        </div>
+
+        <section class="mb-20">
+          <h2 class="text-xl font-black text-gray-400 uppercase tracking-widest mb-8">Featured Challenges</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="group cursor-pointer">
+              <div class="aspect-video rounded-3xl overflow-hidden mb-6 bg-white shadow-lg shadow-gray-200/50 p-6 flex items-center justify-center group-hover:scale-[1.02] transition-all">
+                <img src="./assets/images/download (1).jfif" class="w-full h-full object-contain" alt="General Knowledge" />
+              </div>
+              <span class="text-blue-600 font-bold text-xs uppercase tracking-tight">Level: Mixed</span>
+              <h3 class="font-black text-2xl text-gray-900 mt-1 mb-2 group-hover:text-blue-600 transition-colors">General Knowledge</h3>
+              <p class="text-gray-500 font-medium text-sm leading-relaxed">Master a diverse range of global topics and random trivia.</p>
+            </div>
+
+            <div class="group cursor-pointer">
+              <div class="aspect-video rounded-3xl overflow-hidden mb-6 bg-white shadow-lg shadow-gray-200/50 p-6 flex items-center justify-center group-hover:scale-[1.02] transition-all">
+                <img src="./assets/images/download (2).jfif" class="w-full h-full object-contain" alt="Science" />
+              </div>
+              <span class="text-emerald-600 font-bold text-xs uppercase tracking-tight">Level: Advanced</span>
+              <h3 class="font-black text-2xl text-gray-900 mt-1 mb-2 group-hover:text-emerald-600 transition-colors text-right md:text-left">Science</h3>
+              <p class="text-gray-500 font-medium text-sm leading-relaxed">From molecular biology to astrophysics - test your logic.</p>
+            </div>
+
+            <div class="group cursor-pointer">
+              <div class="aspect-video rounded-3xl overflow-hidden mb-6 bg-white shadow-lg shadow-gray-200/50 p-6 flex items-center justify-center group-hover:scale-[1.02] transition-all">
+                <img src="./assets/images/download (3).jfif" class="w-full h-full object-contain" alt="History" />
+              </div>
+              <span class="text-orange-600 font-bold text-xs uppercase tracking-tight">Level: Expert</span>
+              <h3 class="font-black text-2xl text-gray-900 mt-1 mb-2 group-hover:text-orange-600 transition-colors">History</h3>
+              <p class="text-gray-500 font-medium text-sm leading-relaxed">Journey through eras and rediscover forgotten civilizations.</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="flex items-center gap-4 mb-8">
+            <h2 class="text-xl font-black text-gray-400 uppercase tracking-widest whitespace-nowrap">Catalog View</h2>
+            <div class="w-full h-px bg-gray-100"></div>
+          </div>
+          
+          <div class="flex flex-col gap-4">
+             <div class="flex items-center justify-between p-6 bg-white rounded-[32px] border border-gray-100 hover:shadow-xl hover:shadow-blue-100 hover:border-blue-100 transition-all cursor-pointer group">
+               <div class="flex items-center gap-6">
+                 <div class="w-20 h-16 rounded-2xl overflow-hidden bg-gray-50 p-2 flex items-center justify-center">
+                   <img src="./assets/images/download (4).jfif" class="w-full h-full object-contain" alt="Literature" />
+                 </div>
+                 <div>
+                   <h3 class="font-black text-xl text-gray-900 group-hover:text-blue-600 transition-colors">Literature</h3>
+                   <p class="text-gray-400 text-sm font-medium">Analyze classic plays and modern bestsellers.</p>
+                 </div>
+               </div>
+               <div class="hidden sm:flex flex-col items-end">
+                 <span class="text-xs font-black text-gray-300 uppercase tracking-widest">10 Questions</span>
+                 <span class="px-3 py-1 bg-gray-50 text-gray-500 rounded-lg text-[10px] font-black uppercase mt-1">Normal</span>
+               </div>
+             </div>
+
+             <div class="flex items-center justify-between p-6 bg-white rounded-[32px] border border-gray-100 hover:shadow-xl hover:shadow-blue-100 hover:border-blue-100 transition-all cursor-pointer group">
+              <div class="flex items-center gap-6">
+                <div class="w-20 h-16 rounded-2xl overflow-hidden bg-gray-50 p-2 flex items-center justify-center">
+                  <img src="./assets/images/download (5).jfif" class="w-full h-full object-contain" alt="Mathematics" />
+                </div>
+                <div>
+                  <h3 class="font-black text-xl text-gray-900 group-hover:text-blue-600 transition-colors">Mathematics</h3>
+                  <p class="text-gray-400 text-sm font-medium">Solve complex equations and logical puzzles.</p>
+                </div>
+              </div>
+              <div class="hidden sm:flex flex-col items-end">
+                <span class="text-xs font-black text-gray-300 uppercase tracking-widest">10 Questions</span>
+                <span class="px-3 py-1 bg-gray-50 text-gray-500 rounded-lg text-[10px] font-black uppercase mt-1">Hard</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </template>
+
+    <script type="module" src="./src/script.js"></script>
+  </body>
+</html>
