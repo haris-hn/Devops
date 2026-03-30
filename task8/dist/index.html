@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Splitter Design</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="bg-[#C5E4E7] min-h-screen flex flex-col items-center py-12 px-4">
+    <h1
+      class="text-[#3D6666] text-2xl font-bold tracking-[0.4em] uppercase mb-16 text-center"
+    >
+      TIP<br />Calculator
+    </h1>
+
+    <div
+      class="bg-white max-w-4xl w-full rounded-3xl p-8 flex flex-col lg:flex-row gap-8 shadow-2xl shadow-[#A0BDBF]/50"
+    >
+      <div class="flex-1 space-y-10">
+        <div>
+          <label
+            for="bill"
+            class="block text-sm font-bold text-[#5E7A7D] mb-2.5"
+            >Bill</label
+          >
+          <div class="relative">
+            <input
+              type="number"
+              id="bill"
+              placeholder="142.55"
+              class="w-full bg-[#F3F9FA] text-[#00474B] text-2xl font-bold text-right p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#26C2AE]"
+            />
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-sm font-bold text-[#5E7A7D] mb-4"
+            >Select Tip %</label
+          >
+          <div class="bill-percentage grid grid-cols-2 md:grid-cols-3 gap-4">
+            <button
+              class="bg-[#00474B] text-white text-2xl font-bold py-3 rounded-lg hover:bg-[#A3E8E1] hover:text-[#00474B] transition-colors active:scale-95"
+            >
+              5%
+            </button>
+            <button
+              class="bg-[#00474B] text-white text-2xl font-bold py-3 rounded-lg hover:bg-[#A3E8E1] hover:text-[#00474B] transition-colors active:scale-95"
+            >
+              10%
+            </button>
+            <button
+              class="bg-[#00474B] text-white text-2xl font-bold py-3 rounded-lg hover:bg-[#A3E8E1] hover:text-[#00474B]"
+            >
+              15%
+            </button>
+            <button
+              class="bg-[#00474B] text-white text-2xl font-bold py-3 rounded-lg hover:bg-[#A3E8E1] hover:text-[#00474B] transition-colors active:scale-95"
+            >
+              25%
+            </button>
+            <button
+              class="bg-[#00474B] text-white text-2xl font-bold py-3 rounded-lg hover:bg-[#A3E8E1] hover:text-[#00474B] transition-colors active:scale-95"
+            >
+              50%
+            </button>
+            <input
+              type="number"
+              id="custom-tip"
+              placeholder="Custom"
+              class="bg-[#F3F9FA] text-[#5E7A7D] text-2xl font-bold text-right p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#26C2AE] placeholder:text-[#5E7A7D]"
+            />
+          </div>
+        </div>
+
+        <div class="relative">
+          <label
+            for="people"
+            class="block text-sm font-bold text-[#5E7A7D] mb-2.5"
+            >Number of People</label
+          >
+          <div class="relative">
+            <span class="input-icon text-xl text-gray-300"></span>
+            <input
+              type="number"
+              id="people"
+              placeholder="5"
+              class="w-full bg-[#F3F9FA] text-[#00474B] text-2xl font-bold text-right p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#26C2AE]"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex-1 bg-[#00474B] rounded-2xl p-10 flex flex-col justify-between space-y-12"
+      >
+        <div class="space-y-10 pt-4">
+          <div class="flex justify-between items-center gap-4">
+            <div>
+              <h4 class="text-white text-base font-bold">Tip Amount</h4>
+            </div>
+            <div class="text-[#26C2AE] text-5xl font-extrabold flex items-end">
+              <span class="text-4xl mr-1 align-baseline font-thin">RS</span
+              ><span class="total-bill font-thin">---</span>
+            </div>
+          </div>
+
+          <div class="flex justify-between items-center gap-4">
+            <div>
+              <h4 class="text-white text-base font-bold">Total</h4>
+              <p class="text-[#7F9D9F] text-sm">/ person</p>
+            </div>
+            <div class="text-[#26C2AE] text-5xl font-extrabold flex items-end">
+              <span class="text-4xl mr-1 align-baseline font-thin">RS</span
+              ><span class="perHeads font-thin">---</span>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 m-2 flex gap-3">
+          <button
+            class="calculate w-full bg-yellow-300 text-[#00474B] text-xl font-bold uppercase py-4 rounded-lg shadow-md hover:bg-[#A3E8E1] transition-all p-2 active:scale-[0.98]"
+          >
+            Calculate
+          </button>
+          <button
+            class="reset-btn w-full bg-[#26C2AE] text-[#00474B] text-xl font-bold uppercase py-4 rounded-lg shadow-md hover:bg-[#A3E8E1] transition-all tracking-wider active:scale-[0.98]"
+          >
+            RESET
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
