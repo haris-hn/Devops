@@ -1,0 +1,1704 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orders</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body class="bg-white font-sans">
+    <header class="bg-white p-4">
+      <nav class="flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <img src="./images/LOGO 1.png" alt="" class="p-2 w-auto h-auto" />
+        </div>
+        <div
+          class="hidden md:flex items-center gap-12 font-medium text-[#111111]"
+        >
+          <a href="./index.html" class="hover:text-[#FC8019] transition">Home</a>
+          <a href="./" class="hover:text-[#FC8019] transition">Special Offers</a>
+          <a
+            href="#"
+            class="bg-[#FC8019] text-white px-6 py-2 rounded-full font-semibold transition hover:bg-[#ff9947]"
+            >Restaurants</a
+          >
+          <a href="#" class="hover:text-[#FC8019] transition">Track Order</a>
+        </div>
+        <div
+          class="bg-black text-white p-2 rounded-full flex items-center cursor-pointer"
+        >
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+            />
+          </svg>
+          <span class="font-medium text-lg">Cart<span class="cart-count">(0)</span></span>
+        </div>
+      </nav>
+    </header>
+    <main class="container mx-auto p-4">
+      <div class="max-w-7xl mx-auto px-4 py-10">
+        <div
+          class="relative bg-[#03081F] rounded-2xl overflow-hidden min-h-[450px] flex items-center p-6 md:p-16"
+        >
+          <div class="absolute inset-0 z-0">
+            <img
+              src="./images/Rectangle 44.png"
+              alt="Background"
+              class="w-full h-full object-cover opacity-20 object-center"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-[#03081F] via-transparent to-transparent"
+            ></div>
+          </div>
+
+          <div
+            class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center w-full"
+          >
+            <div class="text-white order-2 lg:order-1">
+              <p class="text-orange-400 font-medium mb-2">I'm lovin' it!</p>
+              <h3 class="text-4xl md:text-5xl font-bold mb-8 leading-tight">
+                McDonald’s East London
+              </h3>
+
+              <div class="flex flex-wrap gap-2">
+                <div
+                  class="flex items-center gap-3 border border-gray-500 rounded-full px-5 py-3 bg-transparent backdrop-blur-sm"
+                >
+                  <svg
+                    class="w-6 h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    ></path>
+                  </svg>
+                  <span class="text-sm font-semibold"
+                    >Minimum Order: 12 GBP</span
+                  >
+                </div>
+
+                <div
+                  class="flex items-center gap-2 border border-gray-500 rounded-full px-5 py-3 bg-transparent backdrop-blur-sm"
+                >
+                  <svg
+                    class="w-6 h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                  <span class="text-sm font-semibold"
+                    >Delivery in 20-25 Minutes</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="relative flex justify-center lg:justify-end order-1 lg:order-2"
+            >
+              <div class="relative w-full max-w-[450px]">
+                <img
+                  src="./images/Rectangle 44.png"
+                  alt="McDonalds Meal"
+                  class="w-auto h-auto object-contain drop-shadow-2xl scale-110 lg:scale-110 translate-y-4 lg:translate-y-8"
+                />
+
+                <div
+                  class="absolute -bottom-4 -left-4 md:-left-10 bg-white p-3 md:p-4 rounded-xl shadow-2xl flex flex-col items-center min-w-[100px] z-20"
+                >
+                  <span
+                    class="text-3xl md:text-4xl font-bold text-gray-900 leading-none"
+                    >3.4</span
+                  >
+                  <div class="flex text-orange-400 mt-1 text-sm md:text-base">
+                    <span>★</span><span>★</span><span>★</span
+                    ><span class="text-gray-300">★</span
+                    ><span class="text-gray-300">★</span>
+                  </div>
+                  <p class="text-[10px] text-gray-400 mt-1">1,360 reviews</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="absolute bottom-0 left-0 bg-orange-500 text-white px-6 py-2 rounded-tr-2xl flex items-center gap-2 z-20"
+          >
+            <span class="text-xs md:text-sm font-bold"
+              >🕒 Open until 3:00 AM</span
+            >
+          </div>
+        </div>
+
+        <div
+          class="mt-16 flex flex-col md:flex-row justify-between items-center gap-6"
+        >
+          <h2 class="text-2xl font-bold text-gray-900">
+            All Offers from McDonald’s East London
+          </h2>
+
+          <div class="relative w-full md:w-80">
+            <span
+              class="absolute inset-y-0 left-4 flex items-center text-gray-400"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                ></path>
+              </svg>
+            </span>
+            <input
+              type="text"
+              placeholder="Search from menu..."
+              class="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-sm"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="bg-orange-500 w-full mt-8">
+      <div class="max-w-7xl mx-auto px-4">
+        <div
+          class="flex items-center gap-4 py-4 overflow-x-auto no-scrollbar whitespace-nowrap"
+        >
+          <a
+            href="#"
+            class="bg-[#03081F] text-white px-8 py-2.5 rounded-full font-bold text-sm md:text-base shadow-lg transition-transform active:scale-95"
+          >
+            Offers
+          </a>
+
+          <a
+            href="#"
+            class="text-white px-4 py-2 font-bold text-sm md:text-base hover:bg-black/10 rounded-full transition-all"
+          >
+            Burgers
+          </a>
+
+          <a
+            href="#"
+            class="text-white px-4 py-2 font-bold text-sm md:text-base hover:bg-black/10 rounded-full transition-all"
+          >
+            Fries
+          </a>
+
+          <a
+            href="#"
+            class="text-white px-4 py-2 font-bold text-sm md:text-base hover:bg-black/10 rounded-full transition-all"
+          >
+            Snacks
+          </a>
+
+          <a
+            href="#"
+            class="text-white px-4 py-2 font-bold text-sm md:text-base hover:bg-black/10 rounded-full transition-all"
+          >
+            Salads
+          </a>
+
+          <a
+            href="#"
+            class="text-white px-4 py-2 font-bold text-sm md:text-base hover:bg-black/10 rounded-full transition-all"
+          >
+            Cold drinks
+          </a>
+
+          <a
+            href="#"
+            class="text-white px-4 py-2 font-bold text-sm md:text-base hover:bg-black/10 rounded-full transition-all"
+          >
+            Happy Meal
+          </a>
+
+          <a
+            href="#"
+            class="text-white px-4 py-2 font-bold text-sm md:text-base hover:bg-black/10 rounded-full transition-all"
+          >
+            Desserts
+          </a>
+
+          <a
+            href="#"
+            class="text-white px-4 py-2 font-bold text-sm md:text-base hover:bg-black rounded-full transition-all"
+          >
+            Hot drinks
+          </a>
+
+          <a
+            href="#"
+            class="text-white px-4 py-2 font-bold text-sm md:text-base hover:bg-black rounded-full transition-all"
+          >
+            Sauces
+          </a>
+
+          <a
+            href="#"
+            class="text-white px-4 py-2 font-bold text-sm md:text-base hover:bg-black rounded-full transition-all"
+          >
+            Orbit
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- BUrgerrs -->
+
+    <div class="bg-wihte p-10 min-h-screen font-sans">
+      <div class="max-w-7xl mx-auto mb-10">
+        <h2 class="text-4xl font-extrabold text-black tracking-tight">
+          Burgers
+        </h2>
+      </div>
+
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10"
+      >
+        <div
+          class="bg-white rounded-2xl shadow-md border border-gray-100 flex overflow-hidden h-[190px] w-full"
+        >
+          <div class="flex-1 p-5 flex flex-col justify-between">
+            <div>
+              <h3
+                class="font-bold text-gray-900 text-[17px] leading-tight mb-2"
+              >
+                Royal Cheese Burger
+              </h3>
+              <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">
+                1 Royal Cheeseburger, medium French Fries, and a cold drink.
+              </p>
+            </div>
+            <div class="font-bold text-[15px] text-black">GBP 12.50</div>
+          </div>
+          <div
+            class="relative w-[175px] bg-[#FFBC0D] flex items-center justify-center"
+          >
+            <img
+              src="./images/Rectangle 46.png"
+              alt="Burger"
+              class="w-32 h-32 object-contain"
+            />
+            <div
+              class="absolute bottom-0 right-0 bg-white pt-2.5 pl-2.5 rounded-tl-[32px]"
+            >
+              <button
+               class="add-btn bg-[#020617] text-white p-2.5 rounded-full hover:scale-110 transition-transform"
+              data-name="Royal Cheese Burger"
+              data-price="12.50"
+              data-img="./images/Rectangle 46.png"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl shadow-md border border-gray-100 flex overflow-hidden h-[190px] w-full"
+        >
+          <div class="flex-1 p-5 flex flex-col justify-between">
+            <div>
+              <h3
+                class="font-bold text-gray-900 text-[17px] leading-tight mb-2"
+              >
+                Big Mac™
+              </h3>
+              <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">
+                The iconic Big Mac™ with two beef patties and special sauce.
+              </p>
+            </div>
+            <div class="font-bold text-[15px] text-black">GBP 10.20</div>
+          </div>
+          <div
+            class="relative w-[175px] bg-[#FFBC0D] flex items-center justify-center"
+          >
+            <img
+              src="./images/Rectangle 46.png"
+              alt="Burger"
+              class="w-32 h-32 object-contain"
+            />
+            <div
+              class="absolute bottom-0 right-0 bg-white pt-2.5 pl-2.5 rounded-tl-[32px]"
+            >
+              <button
+               class="add-btn bg-[#020617] text-white p-2.5 rounded-full hover:scale-110 transition-transform"
+data-name="Big Mac™"
+data-price="10.20"
+data-img="./images/Rectangle 46.png"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl shadow-md border border-gray-100 flex overflow-hidden h-[190px] w-full"
+        >
+          <div class="flex-1 p-5 flex flex-col justify-between">
+            <div>
+              <h3
+                class="font-bold text-gray-900 text-[17px] leading-tight mb-2"
+              >
+                The classics for 3
+              </h3>
+              <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">
+                1 McChicken™, 1 Big Mac™, 1 Royal Cheeseburger, 3 medium sized
+                French Fries, 3 cold drinks
+              </p>
+            </div>
+            <div class="font-bold text-[15px] text-black">GBP 23.10</div>
+          </div>
+          <div
+            class="relative w-[175px] bg-[#FFBC0D] flex items-center justify-center"
+          >
+            <img
+              src="./images/Rectangle 46.png"
+              alt="Burger"
+              class="w-32 h-32 object-contain"
+            />
+            <div
+              class="absolute bottom-0 right-0 bg-white pt-2.5 pl-2.5 rounded-tl-[32px]"
+            >
+              <button
+               class="add-btn bg-[#020617] text-white p-2.5 rounded-full hover:scale-110 transition-transform"
+              data-name="Royal Cheese Burger"
+              data-price="23.10"
+              data-img="./images/Rectangle 46.png"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl shadow-md border border-gray-100 flex overflow-hidden h-[190px] w-full"
+        >
+          <div class="flex-1 p-5 flex flex-col justify-between">
+            <div>
+              <h3
+                class="font-bold text-gray-900 text-[17px] leading-tight mb-2"
+              >
+               The classics for 3
+              </h3>
+              <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">
+                1 McBeef™, 1 Big Mac™, 1 Royal Cheeseburger, 3 medium sized
+                French Fries, 3 cold drinks
+              </p>
+            </div>
+            <div class="font-bold text-[15px] text-black">GBP 89.10</div>
+          </div>
+          <div
+            class="relative w-[175px] bg-[#FFBC0D] flex items-center justify-center"
+          >
+            <img
+              src="./images/Rectangle 46.png"
+              alt="Burger"
+              class="w-32 h-32 object-contain"
+            />
+            <div
+              class="absolute bottom-0 right-0 bg-white pt-2.5 pl-2.5 rounded-tl-[32px]"
+            >
+              <button
+               class="add-btn bg-[#020617] text-white p-2.5 rounded-full hover:scale-110 transition-transform"
+data-name="Royal Cheese Burger"
+data-price="23.10"
+data-img="./images/Rectangle 46.png"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl shadow-md border border-gray-100 flex overflow-hidden h-[190px] w-full"
+        >
+          <div class="flex-1 p-5 flex flex-col justify-between">
+            <div>
+              <h3
+                class="font-bold text-gray-900 text-[17px] leading-tight mb-2"
+              >
+                The classics for 3
+              </h3>
+              <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">
+                1 McChicken™, 1 Big Mac™, 1 Royal Cheeseburger, 3 medium sized
+                French Fries, 3 cold drinks
+              </p>
+            </div>
+            <div class="font-bold text-[15px] text-black">GBP 23.10</div>
+          </div>
+          <div
+            class="relative w-[175px] bg-[#FFBC0D] flex items-center justify-center"
+          >
+            <img
+              src="./images/Rectangle 46.png"
+              alt="Burger"
+              class="w-32 h-32 object-contain"
+            />
+            <div
+              class="absolute bottom-0 right-0 bg-white pt-2.5 pl-2.5 rounded-tl-[32px]"
+            >
+              <button
+               class="add-btn bg-[#020617] text-white p-2.5 rounded-full hover:scale-110 transition-transform"
+data-name="Royal Cheese Burger"
+data-price="23.10"
+data-img="./images/Rectangle 46.png"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl shadow-md border border-gray-100 flex overflow-hidden h-[190px] w-full"
+        >
+          <div class="flex-1 p-5 flex flex-col justify-between">
+            <div>
+              <h3
+                class="font-bold text-gray-900 text-[17px] leading-tight mb-2"
+              >
+                The classics for 3
+              </h3>
+              <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">
+                1 McChicken™, 1 Big Mac™, 1 Royal Cheeseburger, 3 medium sized
+                French Fries, 3 cold drinks
+              </p>
+            </div>
+            <div class="font-bold text-[15px] text-black">GBP 23.10</div>
+          </div>
+          <div
+            class="relative w-[175px] bg-[#FFBC0D] flex items-center justify-center"
+          >
+            <img
+              src="./images/Rectangle 46.png"
+              alt="Burger"
+              class="w-32 h-32 object-contain"
+            />
+            <div
+              class="absolute bottom-0 right-0 bg-white pt-2.5 pl-2.5 rounded-tl-[32px]"
+            >
+              <button
+               class="add-btn bg-[#020617] text-white p-2.5 rounded-full hover:scale-110 transition-transform"
+data-name="Royal Cheese Burger"
+data-price="23.10"
+data-img="./images/Rectangle 46.png"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fries -->
+
+    <div class=" p-10 min-h-screen font-sans">
+      <div class="max-w-7xl mx-auto mb-10">
+        <h2 class="text-4xl font-extrabold text-black tracking-tight">Fries</h2>
+      </div>
+
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10"
+      >
+        <div
+          class="bg-white rounded-2xl shadow-md border border-gray-100 flex overflow-hidden h-[190px] w-full"
+        >
+          <div class="flex-1 p-5 flex flex-col justify-between">
+            <div>
+              <h3
+                class="font-bold text-gray-900 text-[17px] leading-tight mb-2"
+              >
+                French Fries Large
+              </h3>
+              <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">
+                Golden crispy fries with a touch of salt.
+              </p>
+            </div>
+            <div class="font-bold text-[15px] text-black">GBP 4.50</div>
+          </div>
+          <div
+            class="relative w-[175px] bg-[#FFBC0D] flex items-center justify-center"
+          >
+            <img
+              src="./images/Rectangle 46 (1).png"
+              alt="Fries"
+              class="w-32 h-32 object-contain"
+            />
+            <div
+              class="absolute bottom-0 right-0 bg-white pt-2.5 pl-2.5 rounded-tl-[32px]"
+            >
+              <button
+               class="add-btn bg-[#020617] text-white p-2.5 rounded-full hover:scale-110 transition-transform"
+data-name="French Fries Large"
+data-price="4.50"
+data-img="./images/Rectangle 46 (1).png"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl shadow-md border border-gray-100 flex overflow-hidden h-[190px] w-full"
+        >
+          <div class="flex-1 p-5 flex flex-col justify-between">
+            <div>
+              <h3
+                class="font-bold text-gray-900 text-[17px] leading-tight mb-2"
+              >
+                The classics for 3
+              </h3>
+              <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">
+                1 McChicken™, 1 Big Mac™, 1 Royal Cheeseburger, 3 medium sized
+                French Fries, 3 cold drinks
+              </p>
+            </div>
+            <div class="font-bold text-[15px] text-black">GBP 23.10</div>
+          </div>
+          <div
+            class="relative w-[175px] bg-[#FFBC0D] flex items-center justify-center"
+          >
+            <img
+              src="./images/Rectangle 46 (1).png"
+              alt="Burger"
+              class="w-32 h-32 object-contain"
+            />
+            <div
+              class="absolute bottom-0 right-0 bg-white pt-2.5 pl-2.5 rounded-tl-[32px]"
+            >
+              <button
+               class="add-btn bg-[#020617] text-white p-2.5 rounded-full hover:scale-110 transition-transform"
+data-name="Royal Cheese Burger"
+data-price="23.10"
+data-img="./images/Rectangle 46.png"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl shadow-md border border-gray-100 flex overflow-hidden h-[190px] w-full"
+        >
+          <div class="flex-1 p-5 flex flex-col justify-between">
+            <div>
+              <h3
+                class="font-bold text-gray-900 text-[17px] leading-tight mb-2"
+              >
+                Cheesy Fries
+              </h3>
+              <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">
+                Crispy fries topped with melted cheddar cheese.
+              </p>
+            </div>
+            <div class="font-bold text-[15px] text-black">GBP 5.00</div>
+          </div>
+          <div
+            class="relative w-[175px] bg-[#FFBC0D] flex items-center justify-center"
+          >
+            <img
+              src="./images/Rectangle 46 (1).png"
+              alt="Fries"
+              class="w-32 h-32 object-contain"
+            />
+            <div
+              class="absolute bottom-0 right-0 bg-white pt-2.5 pl-2.5 rounded-tl-[32px]"
+            >
+              <button
+               class="add-btn bg-[#020617] text-white p-2.5 rounded-full hover:scale-110 transition-transform"
+data-name="Cheesy Fries"
+data-price="5.00"
+data-img="./images/Rectangle 46 (1).png"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl shadow-md border border-gray-100 flex overflow-hidden h-[190px] w-full"
+        >
+          <div class="flex-1 p-5 flex flex-col justify-between">
+            <div>
+              <h3
+                class="font-bold text-gray-900 text-[17px] leading-tight mb-2"
+              >
+                The classics for 3
+              </h3>
+              <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">
+                1 McChicken™, 1 Big Mac™, 1 Royal Cheeseburger, 3 medium sized
+                French Fries, 3 cold drinks
+              </p>
+            </div>
+            <div class="font-bold text-[15px] text-black">GBP 23.10</div>
+          </div>
+          <div
+            class="relative w-[175px] bg-[#FFBC0D] flex items-center justify-center"
+          >
+            <img
+              src="./images/Rectangle 46 (1).png"
+              alt="Burger"
+              class="w-32 h-32 object-contain"
+            />
+            <div
+              class="absolute bottom-0 right-0 bg-white pt-2.5 pl-2.5 rounded-tl-[32px]"
+            >
+              <button
+               class="add-btn bg-[#020617] text-white p-2.5 rounded-full hover:scale-110 transition-transform"
+data-name="Royal Cheese Burger"
+data-price="23.10"
+data-img="./images/Rectangle 46.png"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl shadow-md border border-gray-100 flex overflow-hidden h-[190px] w-full"
+        >
+          <div class="flex-1 p-5 flex flex-col justify-between">
+            <div>
+              <h3
+                class="font-bold text-gray-900 text-[17px] leading-tight mb-2"
+              >
+                The classics for 3
+              </h3>
+              <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">
+                1 McChicken™, 1 Big Mac™, 1 Royal Cheeseburger, 3 medium sized
+                French Fries, 3 cold drinks
+              </p>
+            </div>
+            <div class="font-bold text-[15px] text-black">GBP 23.10</div>
+          </div>
+          <div
+            class="relative w-[175px] bg-[#FFBC0D] flex items-center justify-center"
+          >
+            <img
+              src="./images/Rectangle 46 (1).png"
+              alt="Burger"
+              class="w-32 h-32 object-contain"
+            />
+            <div
+              class="absolute bottom-0 right-0 bg-white pt-2.5 pl-2.5 rounded-tl-[32px]"
+            >
+              <button
+               class="add-btn bg-[#020617] text-white p-2.5 rounded-full hover:scale-110 transition-transform"
+data-name="Royal Cheese Burger"
+data-price="23.10"
+data-img="./images/Rectangle 46.png"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl shadow-md border border-gray-100 flex overflow-hidden h-[190px] w-full"
+        >
+          <div class="flex-1 p-5 flex flex-col justify-between">
+            <div>
+              <h3
+                class="font-bold text-gray-900 text-[17px] leading-tight mb-2"
+              >
+                The classics for 3
+              </h3>
+              <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">
+                1 McChicken™, 1 Big Mac™, 1 Royal Cheeseburger, 3 medium sized
+                French Fries, 3 cold drinks
+              </p>
+            </div>
+            <div class="font-bold text-[15px] text-black">GBP 23.10</div>
+          </div>
+          <div
+            class="relative w-[175px] bg-[#FFBC0D] flex items-center justify-center"
+          >
+            <img
+              src="./images/Rectangle 46 (1).png"
+              alt="Burger"
+              class="w-32 h-32 object-cover"
+            />
+            <div
+              class="absolute bottom-0 right-0 bg-white pt-2.5 pl-2.5 rounded-tl-[32px]"
+            >
+              <button
+               class="add-btn bg-[#020617] text-white p-2.5 rounded-full hover:scale-110 transition-transform"
+data-name="Royal Cheese Burger"
+data-price="23.10"
+data-img="./images/Rectangle 46.png"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- cold drinks -->
+    <div class= "p-10 min-h-screen font-sans">
+      <div class="max-w-7xl mx-auto mb-10">
+        <h2 class="text-4xl font-extrabold text-black tracking-tight">
+          Cold Drinks
+        </h2>
+      </div>
+
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10"
+      >
+        <div
+          class="bg-white rounded-2xl shadow-md border border-gray-100 flex overflow-hidden h-[190px] w-full"
+        >
+          <div class="flex-1 p-5 flex flex-col justify-between">
+            <div>
+              <h3
+                class="font-bold text-gray-900 text-[17px] leading-tight mb-2"
+              >
+                Lemonade 500ml
+              </h3>
+              <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">
+                Freshly squeezed lemonade with mint.
+              </p>
+            </div>
+            <div class="font-bold text-[15px] text-black">GBP 3.20</div>
+          </div>
+          <div
+            class="relative w-[175px] bg-[#FFBC0D] flex items-center justify-center"
+          >
+            <img
+              src="./images/Rectangle 46 (3).png"
+              alt="Drink"
+              class="w-32 h-32 object-contain"
+            />
+            <div
+              class="absolute bottom-0 right-0 bg-white pt-2.5 pl-2.5 rounded-tl-[32px]"
+            >
+              <button
+               class="add-btn bg-[#020617] text-white p-2.5 rounded-full hover:scale-110 transition-transform"
+data-name="Lemonade 500ml"
+data-price="3.20"
+data-img="./images/Rectangle 46 (3).png"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl shadow-md border border-gray-100 flex overflow-hidden h-[190px] w-full"
+        >
+          <div class="flex-1 p-5 flex flex-col justify-between">
+            <div>
+              <h3
+                class="font-bold text-gray-900 text-[17px] leading-tight mb-2"
+              >
+                Coca Cola 330ml
+              </h3>
+              <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">
+                Chilled soft drink.
+              </p>
+            </div>
+            <div class="font-bold text-[15px] text-black">GBP 2.50</div>
+          </div>
+          <div
+            class="relative w-[175px] bg-[#FFBC0D] flex items-center justify-center"
+          >
+            <img
+              src="./images/Rectangle 46 (5).png"
+              alt="Drink"
+              class="w-32 h-32 object-contain"
+            />
+            <div
+              class="absolute bottom-0 right-0 bg-white pt-2.5 pl-2.5 rounded-tl-[32px]"
+            >
+              <button
+               class="add-btn bg-[#020617] text-white p-2.5 rounded-full hover:scale-110 transition-transform"
+data-name="Coca Cola 330ml"
+data-price="2.50"
+data-img="./images/Rectangle 46 (5).png"
+              >
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl shadow-md border border-gray-100 flex overflow-hidden h-[190px] w-full"
+        >
+          <div class="flex-1 p-5 flex flex-col justify-between">
+            <div>
+              <h3
+                class="font-bold text-gray-900 text-[17px] leading-tight mb-2"
+              >
+                The classics for 3
+              </h3>
+              <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">
+                1 McChicken™, 1 Big Mac™, 1 Royal Cheeseburger, 3 medium sized
+                French Fries, 3 cold drinks
+              </p>
+            </div>
+            <div class="font-bold text-[15px] text-black">GBP 23.10</div>
+          </div>
+          <div
+            class="relative w-[175px] bg-[#FFBC0D] flex items-center justify-center"
+          >
+            <img
+              src="./images/Rectangle 46 (6).png"
+              alt="Burger"
+              class="w-32 h-32 object-contain"
+            />
+            <div
+              class="absolute bottom-0 right-0 bg-white pt-2.5 pl-2.5 rounded-tl-[32px]"
+            >
+              <button
+               class="add-btn bg-[#020617] text-white p-2.5 rounded-full hover:scale-110 transition-transform"
+data-name="Royal Cheese Burger"
+data-price="23.10"
+data-img="./images/Rectangle 46.png"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl shadow-md border border-gray-100 flex overflow-hidden h-[190px] w-full"
+        >
+          <div class="flex-1 p-5 flex flex-col justify-between">
+            <div>
+              <h3
+                class="font-bold text-gray-900 text-[17px] leading-tight mb-2"
+              >
+                The classics for 3
+              </h3>
+              <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">
+                1 McChicken™, 1 Big Mac™, 1 Royal Cheeseburger, 3 medium sized
+                French Fries, 3 cold drinks
+              </p>
+            </div>
+            <div class="font-bold text-[15px] text-black">GBP 23.10</div>
+          </div>
+          <div
+            class="relative w-[175px] bg-[#FFBC0D] flex items-center justify-center"
+          >
+            <img
+              src="./images/Rectangle 46 (7).png"
+              alt="Burger"
+              class="w-32 h-32 object-contain"
+            />
+            <div
+              class="absolute bottom-0 right-0 bg-white pt-2.5 pl-2.5 rounded-tl-[32px]"
+            >
+              <button
+               class="add-btn bg-[#020617] text-white p-2.5 rounded-full hover:scale-110 transition-transform"
+data-name="Royal Cheese Burger"
+data-price="23.10"
+data-img="./images/Rectangle 46.png"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl shadow-md border border-gray-100 flex overflow-hidden h-[190px] w-full"
+        >
+          <div class="flex-1 p-5 flex flex-col justify-between">
+            <div>
+              <h3
+                class="font-bold text-gray-900 text-[17px] leading-tight mb-2"
+              >
+                The classics for 3
+              </h3>
+              <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">
+                1 McChicken™, 1 Big Mac™, 1 Royal Cheeseburger, 3 medium sized
+                French Fries, 3 cold drinks
+              </p>
+            </div>
+            <div class="font-bold text-[15px] text-black">GBP 23.10</div>
+          </div>
+          <div
+            class="relative w-[175px] bg-[#FFBC0D] flex items-center justify-center"
+          >
+            <img
+              src="./images/Rectangle 46 (8).png"
+              alt="Burger"
+              class="w-32 h-32 object-contain"
+            />
+            <div
+              class="absolute bottom-0 right-0 bg-white pt-2.5 pl-2.5 rounded-tl-[32px]"
+            >
+              <button
+               class="add-btn bg-[#020617] text-white p-2.5 rounded-full hover:scale-110 transition-transform"
+data-name="Royal Cheese Burger"
+data-price="23.10"
+data-img="./images/Rectangle 46.png"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl shadow-md border border-gray-100 flex overflow-hidden h-[190px] w-full"
+        >
+          <div class="flex-1 p-5 flex flex-col justify-between">
+            <div>
+              <h3
+                class="font-bold text-gray-900 text-[17px] leading-tight mb-2"
+              >
+                The classics for 3
+              </h3>
+              <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">
+                1 McChicken™, 1 Big Mac™, 1 Royal Cheeseburger, 3 medium sized
+                French Fries, 3 cold drinks
+              </p>
+            </div>
+            <div class="font-bold text-[15px] text-black">GBP 23.10</div>
+          </div>
+          <div
+            class="relative w-[175px] bg-[#FFBC0D] flex items-center justify-center"
+          >
+            <img
+              src="./images/Rectangle 46 (6).png"
+              alt="Burger"
+              class="w-32 h-32 object-contain"
+            />
+            <div
+              class="absolute bottom-0 right-0 bg-white pt-2.5 pl-2.5 rounded-tl-[32px]"
+            >
+              <button
+               class="add-btn bg-[#020617] text-white p-2.5 rounded-full hover:scale-110 transition-transform"
+data-name="Royal Cheese Burger"
+data-price="23.10"
+data-img="./images/Rectangle 46.png"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+ 
+    
+<!-- timingss -->
+<div class="max-w-7xl mx-auto mb-6 shadow-lg rounded-2xl overflow-hidden flex flex-col lg:flex-row border ">
+    
+    <div class="flex-[2] p-8 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-12">
+      
+      <div>
+        <div class="flex items-center gap-3 mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <h3 class="text-xl font-bold">Delivery information</h3>
+        </div>
+        <ul class="space-y-2 text-[13px] text-gray-800">
+          <li><span class="font-bold">Monday:</span> 12:00 AM–3:00 AM, 8:00 AM–3:00 AM</li>
+          <li><span class="font-bold">Tuesday:</span> 8:00 AM–3:00 AM</li>
+          <li><span class="font-bold">Wednesday:</span> 8:00 AM–3:00 AM</li>
+          <li><span class="font-bold">Thursday:</span> 8:00 AM–3:00 AM</li>
+          <li><span class="font-bold">Friday:</span> 8:00 AM–3:00 AM</li>
+          <li><span class="font-bold">Saturday:</span> 8:00 AM–3:00 AM</li>
+          <li><span class="font-bold">Sunday:</span> 8:00 AM–12:00 AM</li>
+          <li class="pt-4 font-bold text-black">Estimated time until delivery: 20 min</li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="flex items-center gap-3 mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg>
+          <h3 class="text-xl font-bold">Contact information</h3>
+        </div>
+        <p class="text-[13px] text-gray-600 mb-6 leading-relaxed">
+          If you have allergies or other dietary restrictions, please contact the restaurant. The restaurant will provide food-specific information upon request.
+        </p>
+        <div class="mb-4">
+          <h4 class="font-bold text-sm">Phone number</h4>
+          <p class="text-[13px] text-gray-700">+934443-43</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-sm">Website</h4>
+          <a href="#" class="text-[13px] text-gray-700 underline underline-offset-2 decoration-gray-300">http://mcdonalds.uk/</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-[#020617] text-white flex-1 p-8 md:p-12">
+      <div class="flex items-center gap-3 mb-8">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <h3 class="text-xl font-bold">Operational Times</h3>
+      </div>
+      <ul class="space-y-3 text-[13px] opacity-90">
+        <li><span class="font-bold">Monday:</span> 8:00 AM–3:00 AM</li>
+        <li><span class="font-bold">Tuesday:</span> 8:00 AM–3:00 AM</li>
+        <li><span class="font-bold">Wednesday:</span> 8:00 AM–3:00 AM</li>
+        <li><span class="font-bold">Thursday:</span> 8:00 AM–3:00 AM</li>
+        <li><span class="font-bold">Friday:</span> 8:00 AM–3:00 AM</li>
+        <li><span class="font-bold">Saturday:</span> 8:00 AM–3:00 AM</li>
+        <li><span class="font-bold">Sunday:</span> 8:00 AM–3:00 AM</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- About -->
+ <div class="max-w-7xl mx-auto py-12 px-6 font-sans">
+  <div class="flex flex-col md:flex-row justify-between items-center mb-8 gap-6">
+    <h2 class="text-3xl font-extrabold text-black">Know more about us!</h2>
+    
+    <div class="flex items-center gap-2 border border-gray-200 rounded-full p-1 bg-white">
+      <button class="bg-[#FFBC0D] text-black font-bold px-6 py-2.5 rounded-full shadow-sm">
+        Frequent Questions
+      </button>
+      <button class="px-5 py-2 text-gray-500 font-medium hover:text-black transition-colors">Who we are?</button>
+      <button class="px-5 py-2 text-gray-500 font-medium hover:text-black transition-colors">Partner Program</button>
+      <button class="px-5 py-2 text-gray-500 font-medium hover:text-black transition-colors">Help & Support</button>
+    </div>
+  </div>
+
+  <div class="bg-[#020617] rounded-[32px] p-8 md:p-14 flex flex-col lg:flex-row gap-12 text-white">
+    
+    <div class="flex-1 space-y-5">
+      <button class="w-full bg-[#FFBC0D] text-black font-extrabold py-4 px-8 rounded-full text-left text-sm transition-transform active:scale-95">
+        How does Order.UK work?
+      </button>
+      
+      <div class="space-y-6 pt-4 px-4">
+        <button class="w-full text-left text-sm font-bold border-b border-gray-800 pb-4 block hover:text-[#FFBC0D] transition-colors">
+          What payment methods are accepted?
+        </button>
+        <button class="w-full text-left text-sm font-bold border-b border-gray-800 pb-4 block hover:text-[#FFBC0D] transition-colors">
+          Can I track my order in real-time?
+        </button>
+        <button class="w-full text-left text-sm font-bold border-b border-gray-800 pb-4 block hover:text-[#FFBC0D] transition-colors">
+          Are there any special discounts or promotions available?
+        </button>
+        <button class="w-full text-left text-sm font-bold border-b border-gray-800 pb-4 block hover:text-[#FFBC0D] transition-colors">
+          Is Order.UK available in my area?
+        </button>
+      </div>
+    </div>
+
+    <div class="flex-[1.4] flex flex-col justify-center">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-8">
+        
+        <div class="bg-[#D9D9D9] p-6 rounded-2xl text-center flex flex-col items-center justify-between min-h-[220px]">
+          <h4 class="text-black font-bold text-sm">Place an Order!</h4>
+          <div class="relative">
+            <img src="./images/order-food 1.png" alt="Order" class="w-20 h-20 object-contain" />
+          </div>
+          <p class="text-black text-[10px] font-medium leading-tight">
+            Place order through our website or Mobile app
+          </p>
+        </div>
+
+        <div class="bg-[#D9D9D9] p-6 rounded-2xl text-center flex flex-col items-center justify-between min-h-[220px]">
+          <h4 class="text-black font-bold text-sm">Track Progress</h4>
+          <div class="relative">
+            <img src="./images/food 1.png" alt="Track" class="w-20 h-20 object-contain" />
+          </div>
+          <p class="text-black text-[10px] font-medium leading-tight">
+            Your can track your order status with delivery time
+          </p>
+        </div>
+
+        <div class="bg-[#D9D9D9] p-6 rounded-2xl text-center flex flex-col items-center justify-between min-h-[220px]">
+          <h4 class="text-black font-bold text-sm">Get your Order!</h4>
+          <div class="relative">
+            <img src="./images/order 1.png" alt="Receive" class="w-20 h-20 object-contain" />
+          </div>
+          <p class="text-black text-[10px] font-medium leading-tight">
+            Receive your order at a lighting fast speed!
+          </p>
+        </div>
+
+      </div>
+
+      <p class="text-center text-[12px] leading-relaxed opacity-90 max-w-2xl mx-auto">
+        Order.UK simplifies the food ordering process. Browse through our diverse menu, 
+        select your favorite dishes, and proceed to checkout. Your delicious meal will be 
+        on its way to your doorstep in no time!
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<!-- Customer reviews -->
+ <div class="bg-[#D9D9D9] py-16 px-4 md:px-10 font-sans">
+  <div class="max-w-[1440px] mx-auto">
+    
+    <div class="flex justify-between items-center mb-10">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-black">Customer Reviews</h2>
+      
+      <div class="flex gap-4">
+        <button id="prevBtn" class="bg-[#FFBC0D] p-4 rounded-full shadow-md hover:bg-black transition-all group active:scale-90">
+          <svg class="group-hover:stroke-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <button id="nextBtn" class="bg-[#FFBC0D] p-4 rounded-full shadow-md hover:bg-black transition-all group active:scale-90">
+          <svg class="group-hover:stroke-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="overflow-hidden">
+      <div id="sliderTrack" class="flex gap-6 transition-transform duration-500 ease-in-out">
+        
+        <div class="min-w-full sm:min-w-[calc(50%-12px)] lg:min-w-[calc(25%-18px)] bg-white rounded-2xl p-7 shadow-sm border border-gray-100">
+          <div class="flex justify-between items-start mb-6">
+            <div class="flex gap-3">
+              <img src="./images/Ellipse 3.png" alt="User" class="w-12 h-12 rounded-full object-cover">
+              <div class="border-l-2 border-[#FFBC0D] pl-3">
+                <h4 class="font-bold text-sm text-gray-900">St Glx</h4>
+                <p class="text-[#FFBC0D] text-[10px] font-bold">South London</p>
+              </div>
+            </div>
+            <div class="text-right">
+              <div class="text-[#FFBC0D] text-xs mb-1">★★★★★</div>
+              <p class="text-[9px] text-gray-400 flex items-center justify-end gap-1 font-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                24th September, 2023
+              </p>
+            </div>
+          </div>
+          <p class="text-[12px] leading-relaxed text-gray-700 font-medium italic">
+            "The positive aspect was undoubtedly the efficiency of the service. The queue moved quickly, the staff was friendly, and the food was up to the usual McDonald's standard – hot and satisfying."
+          </p>
+        </div>
+
+        <div class="min-w-full sm:min-w-[calc(50%-12px)] lg:min-w-[calc(25%-18px)] bg-white rounded-2xl p-7 shadow-sm border border-gray-100">
+          <div class="flex justify-between items-start mb-6">
+            <div class="flex gap-3">
+              <img src="./images/Ellipse 3.png" alt="User" class="w-12 h-12 rounded-full object-cover">
+              <div class="border-l-2 border-[#FFBC0D] pl-3">
+                <h4 class="font-bold text-sm text-gray-900">St Glx</h4>
+                <p class="text-[#FFBC0D] text-[10px] font-bold">South London</p>
+              </div>
+            </div>
+            <div class="text-right"><div class="text-[#FFBC0D] text-xs">★★★★★</div></div>
+          </div>
+          <p class="text-[12px] text-gray-700 italic"> "The positive aspect was undoubtedly the efficiency of the service. The queue moved quickly, the staff was friendly, and the food was up to the usual McDonald's standard – hot and satisfying."</p>
+        </div>
+        <div class="min-w-full sm:min-w-[calc(50%-12px)] lg:min-w-[calc(25%-18px)] bg-white rounded-2xl p-7 shadow-sm border border-gray-100">
+          <div class="flex justify-between items-start mb-6">
+            <div class="flex gap-3">
+              <img src="./images/Ellipse 3.png" alt="User" class="w-12 h-12 rounded-full object-cover">
+              <div class="border-l-2 border-[#FFBC0D] pl-3">
+                <h4 class="font-bold text-sm text-gray-900">St Glx</h4>
+                <p class="text-[#FFBC0D] text-[10px] font-bold">South London</p>
+              </div>
+            </div>
+            <div class="text-right"><div class="text-[#FFBC0D] text-xs">★★★★★</div></div>
+          </div>
+          <p class="text-[12px] text-gray-700 italic"> "The positive aspect was undoubtedly the efficiency of the service. The queue moved quickly, the staff was friendly, and the food was up to the usual McDonald's standard – hot and satisfying."</p>
+        </div>
+        <div class="min-w-full sm:min-w-[calc(50%-12px)] lg:min-w-[calc(25%-18px)] bg-white rounded-2xl p-7 shadow-sm border border-gray-100">
+          <div class="flex justify-between items-start mb-6">
+            <div class="flex gap-3">
+              <img src="./images/Ellipse 3.png" alt="User" class="w-12 h-12 rounded-full object-cover">
+              <div class="border-l-2 border-[#FFBC0D] pl-3">
+                <h4 class="font-bold text-sm text-gray-900">St Glx</h4>
+                <p class="text-[#FFBC0D] text-[10px] font-bold">South London</p>
+              </div>
+            </div>
+            <div class="text-right"><div class="text-[#FFBC0D] text-xs">★★★★★</div></div>
+          </div>
+          <p class="text-[12px] text-gray-700 italic"> "The positive aspect was undoubtedly the efficiency of the service. The queue moved quickly, the staff was friendly, and the food was up to the usual McDonald's standard – hot and satisfying."</p>
+        </div>
+
+        <div class="min-w-full sm:min-w-[calc(50%-12px)] lg:min-w-[calc(25%-18px)] bg-white rounded-2xl p-7 shadow-sm border border-gray-100">
+          <div class="flex justify-between items-start mb-6">
+            <div class="flex gap-3"><img src="./images/Ellipse 3.png" alt="User" class="w-12 h-12 rounded-full object-cover"><div class="border-l-2 border-[#FFBC0D] pl-3"><h4 class="font-bold text-sm">St Glx</h4><p class="text-[#FFBC0D] text-[10px]">South London</p></div></div>
+            <div class="text-right"><div class="text-[#FFBC0D] text-xs">★★★★★</div></div>
+          </div>
+          <p class="text-[12px] text-gray-700 italic"> "The positive aspect was undoubtedly the efficiency of the service. The queue moved quickly, the staff was friendly, and the food was up to the usual McDonald's standard – hot and satisfying."</p>
+        </div>
+
+        <div class="min-w-full sm:min-w-[calc(50%-12px)] lg:min-w-[calc(25%-18px)] bg-white rounded-2xl p-7 shadow-sm border border-gray-100">
+          <div class="flex justify-between items-start mb-6">
+            <div class="flex gap-3"><img src="./images/Ellipse 3.png" alt="User" class="w-12 h-12 rounded-full object-cover"><div class="border-l-2 border-[#FFBC0D] pl-3"><h4 class="font-bold text-sm">St Glx</h4><p class="text-[#FFBC0D] text-[10px]">South London</p></div></div>
+            <div class="text-right"><div class="text-[#FFBC0D] text-xs">★★★★★</div></div>
+          </div>
+          <p class="text-[12px] text-gray-700 italic"> "The positive aspect was undoubtedly the efficiency of the service. The queue moved quickly, the staff was friendly, and the food was up to the usual McDonald's standard – hot and satisfying."</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="mt-12 bottom-0 flex justify-center">
+      <div class="bg-white px-14 py-6 rounded-2xl shadow-xl text-center border-b-[8px] border-[#FFBC0D] relative">
+        <div class="text-5xl font-black text-black">3.4</div>
+        <div class="text-[#FFBC0D] text-lg my-1">★★★★☆</div>
+        <p class="text-[11px] text-gray-400 font-bold uppercase">1,360 reviews</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- Partners -->
+ <div class="max-w-7xl mx-auto py-12 px-6 font-sans">
+  
+  <h2 class="text-3xl font-extrabold text-black mb-10">Similar Restaurants</h2>
+
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
+    
+    <div class="group cursor-pointer">
+      <div class="bg-[#FC8019] rounded-2xl overflow-hidden shadow-sm transition-transform hover:-translate-y-2">
+        <div class="bg-white p-6 h-32 flex items-center justify-center">
+          <img src="./images/Rectangle 13.png" alt="McDonald's" class="w-full h-full object-contain" />
+        </div>
+        <div class="bg-[#FC8019] py-3 text-center">
+          <span class="text-white font-bold text-xs">McDonald's London</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="group cursor-pointer">
+      <div class="bg-[#FC8019] rounded-2xl overflow-hidden shadow-sm transition-transform hover:-translate-y-2">
+        <div class="bg-white p-6 h-32 flex items-center justify-center">
+          <img src="./images/Rectangle 13 (1).png" alt="Papa Johns" class="w-full h-full object-contain" />
+        </div>
+        <div class="bg-[#FC8019] py-3 text-center">
+          <span class="text-white font-bold text-xs">Papa Johns</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="group cursor-pointer">
+      <div class="bg-[#FC8019] rounded-2xl overflow-hidden shadow-sm transition-transform hover:-translate-y-2">
+        <div class="bg-white p-6 h-32 flex items-center justify-center">
+          <img src="./images/Rectangle 13 (2).png" alt="KFC" class="w-full h-full object-contain" />
+        </div>
+        <div class="bg-[#FC8019] py-3 text-center">
+          <span class="text-white font-bold text-xs">KFC West London</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="group cursor-pointer">
+      <div class="bg-[#FC8019] rounded-2xl overflow-hidden shadow-sm transition-transform hover:-translate-y-2">
+        <div class="bg-white p-6 h-32 flex items-center justify-center">
+          <img src="./images/Rectangle 13 (3).png" alt="Texas Chicken" class="w-full h-full object-contain" />
+        </div>
+        <div class="bg-[#FC8019] py-3 text-center">
+          <span class="text-white font-bold text-xs">Texas Chicken</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="group cursor-pointer">
+      <div class="bg-[#FC8019] rounded-2xl overflow-hidden shadow-sm transition-transform hover:-translate-y-2">
+        <div class="bg-white p-6 h-32 flex items-center justify-center">
+          <img src="./images/Rectangle 13 (4).png" alt="Burger King" class="w-full h-full object-contain" />
+        </div>
+        <div class="bg-[#FC8019] py-3 text-center">
+          <span class="text-white font-bold text-xs">Burger King</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="group cursor-pointer">
+      <div class="bg-[#FC8019] rounded-2xl overflow-hidden shadow-sm transition-transform hover:-translate-y-2">
+        <div class="bg-white p-6 h-32 flex items-center justify-center">
+          <img src="./images/Rectangle 13 (5).png" alt="Shaurma 1" class="w-full h-full object-contain" />
+        </div>
+        <div class="bg-[#FC8019] py-3 text-center">
+          <span class="text-white font-bold text-xs">Shaurma 1</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Footer -->
+ <footer class="bg-[#E9E9E9] pt-16 font-sans">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 pb-16">
+    
+    <div class="space-y-6">
+      <img src="./images/LOGO 1.png" alt="">
+      <div class="flex flex-col gap-3">
+        <a href="#"><img src="./images/app-store.png" alt="App Store" class="w-40"></a>
+        <a href="#"><img src="./images/google-play.png" alt="Google Play" class="w-40"></a>
+      </div>
+      <p class="text-[11px] text-gray-600 leading-tight">
+        Company # 490039-445, Registered with<br>House of companies.
+      </p>
+    </div>
+
+    <div class="md:col-span-1">
+      <h4 class="font-bold text-gray-900 mb-6">Get Exclusive Deals in your inbox</h4>
+      <div class="relative mb-4">
+        <input type="email" placeholder="youremail@gmail.com" class="w-full bg-[#D9D9D9] rounded-full py-3 px-6 text-sm focus:outline-none">
+        <button class="absolute right-1 top-1 bg-[#FC8019] text-white px-6 py-2 rounded-full font-bold text-sm hover:bg-orange-600 transition-colors">
+          Subscribe
+        </button>
+      </div>
+      <p class="text-[10px] text-gray-500 mb-6">we wont spam, read our <a href="#" class="underline">email policy</a></p>
+      
+      <div class="flex gap-4">
+        <a href="#" class="hover:opacity-80"><img src="./images/Facebook.png" class="w-6 h-6"></a>
+        <a href="#" class="hover:opacity-80"><img src="./images/Instagram.png" class="w-6 h-6"></a>
+        <a href="#" class="hover:opacity-80"><img src="./images/TikTok.png" class="w-6 h-6"></a>
+        <a href="#" class="hover:opacity-80"><img src="./images/Snapchat.png" class="w-6 h-6"></a>
+      </div>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-gray-900 mb-6">Legal Pages</h4>
+      <ul class="space-y-3 text-xs font-medium text-gray-800 underline">
+        <li><a href="#">Terms and conditions</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Cookies</a></li>
+        <li><a href="#">Modern Slavery Statement</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-gray-900 mb-6">Important Links</h4>
+      <ul class="space-y-3 text-xs font-medium text-gray-800 underline">
+        <li><a href="#">Get help</a></li>
+        <li><a href="#">Add your restaurant</a></li>
+        <li><a href="#">Sign up to deliver</a></li>
+        <li><a href="#">Create a business account</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="bg-[#020617] py-6">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-white text-[10px]">Order.uk Copyright 2024, All Rights Reserved.</p>
+      <div class="flex gap-6 text-white text-[10px]">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <a href="#">Pricing</a>
+        <a href="#">Do not sell or share my personal information</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<div id="cart-popup" class="fixed inset-0 hidden items-center justify-end bg-black/40 z-50">
+
+<div class="h-full w-full max-w-md bg-white shadow-2xl flex flex-col">
+
+<div class="p-6 border-b flex justify-between">
+<h3 class="text-2xl font-bold">My Basket</h3>
+<button onclick="toggleCart()">X</button>
+</div>
+
+<div id="cart-items" class="flex-1 overflow-y-auto p-6 space-y-4"></div>
+
+<div class="p-6 bg-gray-50 border-t space-y-2">
+<div class="flex justify-between">
+<span>Subtotal</span>
+<span>GBP <span id="subtotal">0</span></span>
+</div>
+
+<div class="flex justify-between">
+<span>Delivery</span>
+<span>GBP 3</span>
+</div>
+
+<div class="flex justify-between text-xl font-bold">
+<span>Total</span>
+<span>GBP <span id="total">0</span></span>
+</div>
+</div>
+
+</div>
+</div>
+
+<script src="cart.js"></script>
+
+  </body>
+</html>
